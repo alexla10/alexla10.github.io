@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link id="estilos" rel="stylesheet" href="CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.ico">
+    
+</head>
+<body>
+    <header>
+        <!-- Barra de Navegacion -->
+        <nav class="nav">
+            <img src="https://cdn.profesional.ticmas.io/logos/argentina-programa.svg" alt="Logo de Argentina Programa 4.0" class="logo">
+            <button class="switchDark  alineacion" id="switch">
+                <span class="ligth"><i class='bx bx-sun' ></i></span>
+                <span class="dark"><i class='bx bx-moon' ></i></span>
+            </button>
+            <button class="nav-bar">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#Inicio" class="nav-link sombreado">Inicio</a></li>
+                <li class="nav-menu-item"><a href="#Sobre-Mi" class="nav-link sombreado">Sobre Mi</a></li>
+                <li class="nav-menu-item"><a href="#Experiencia" class="nav-link sombreado">Experiencia</a></li>
+                <li class="nav-menu-item"><a href="#Habilidades" class="nav-link sombreado">Habilidades</a></li>
+                <li class="nav-menu-item"><a href="#Contacto" class="nav-link sombreado">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Incio - Foto de Perfil -->
+        <section id="Inicio">
+            <h1 id="props">EDGAR SIMMONS</h1>
+
+            <img src="imagenes/imagen_perfil.jpg" alt="Imagen de perfil">
+
+            <h1 id="props">Desarrolador Web</h1>
+        </section>
+
+        <!-- Informacion Personal -->
+        <section id="Sobre-Mi">
+            <h2 id="Titulo">Sobre Mi :</h2>
+            <p id="parrafo">Programador con más de Diez años de experiencia generando código para empresas del sector bancario. 
+            Creé el nuevo portal web del Banco Patagonia , el cual recibe más de 1 millón de visitas al día. Conocimientos de Java ,JavaScript  
+            y NodeJS. Especialista en solución de problemas y trabajo en equipo.</p>
+            <h3 id="datos"><i class='bx bxs-calendar'></i> Fecha de Nacimiento : 6 de mayo 1986</h3>
+            <h3 id="datos"><i class="fa fa-map-marker"></i> Lugar de Residencia : Capital Federal</h3>
+            <h3 id="datos"><i class="fa fa-envelope-o"></i> E-Mail : edgar.simmons@gmail.com</h3>
+            <h3 id="datos"><i class="fa fa-whatsapp"></i> Telefono : (262) 619-3113</h3>
+            <ul class="lista">
+                <h3>Formacion Academica :</h3>
+                <li class="items">Esc. Superior n.° 9 Domingo Faustino Sarmiento - 2003</li>
+                <li class="items">FIUBA - Ingenieria en Informatica - 2008</li>
+                <li class="items">FIUBA - Master en Desarrollo Web y Aplicaciones Moviles - 2010</li>
+            </ul>    
+        </section>
+
+        <!-- Experiencia Laboral -->
+        <section id="Experiencia">
+            <h2 id="titulo_experiencia">Experiencia :</h2>
+            <h3>Imactions - Junior Web Devolper, Marzo 2011 - Junio 2015</h3>
+            <ul class="lista">
+                <li class="items">Participación activa en el diseño web creativo y su desarrollo.</li>
+                <li class="items">Diseño de proyecto y planificación</li>
+                <li class="items">Participación en diseño</li>
+            </ul>
+
+            <h3>Banco Patagonia - Senior Web Devolper, Septiembre 2015 - Enero 2020</h3>
+            <ul class="lista">
+                <li class="items">Participación activa en el diseño web creativo y su desarrollo.</li>
+                <li class="items">Diseño de proyecto y planificación</li>
+                <li class="items">Participación en diseño</li>
+            </ul>
+
+            <h3>Accenture Argentina - Senior Web Devolper, Abril 2020  - Actualidad</h3>
+            <ul class="lista">
+                <li class="items">Participación activa en el diseño web creativo y su desarrollo.</li>
+                <li class="items">Diseño de proyecto y planificación</li>
+                <li class="items">Participación en diseño</li>
+            </ul>
+
+        </section>
+
+        <!-- Lenguajes de programacion, idiomas etc. -->
+        <section id="Habilidades">
+            <h2>Habilidades :</h2>
+            <div class="Habilidades_info">
+                <div class="Conocimientos_1" id="Lenguajes">
+                    <h3>Lenguajes de Programacion</h3>
+                        <h4>C++</h4>
+                        <h4>Python</h4>
+                        <h4>Java</h4>
+                        <h4>JavaScript</h4>
+                        <h4>NodeJS</h4>
+                        <div class="mas_info" id="contenedor">
+                            <h4>PHP</h4>
+                            <h4>Ruby</h4>
+                            <h4>HTML y HTML5</h4>
+                            <h4>CSS y CSS3</h4>
+                            <h4>C#</h4>
+                        </div>
+                        <button type="button" id="boton_mostrar">Mas Info</button>
+                </div>
+                <div class="Conocimientos_2">
+                    <h3 id="idiomas_titulo">Manejo de Idiomas</h3>
+                    <h4><img src="imagenes/Bandera_de_España.png" alt="Bandera de España" class="Banderas">Español - Nativo</h4>
+                    <h4><img src="imagenes/Bandera_de_Reino_Unido.png" alt="Bandera del Reino Unido" class="Banderas ing">Ingles - Avanzado</h4>
+                    <h4><img src="imagenes/Bandera_de_Francia.png" alt="Bandera de Francia" class="Banderas fra">Frances - Intermedio</h4>
+                    <h4><img src="imagenes/Bandera_de_Italia.png" alt="Bandera de Italia" class="Banderas ita">Italiano - Intermedio</h4>
+                <div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Formulario de contacto -->
+    <footer id="Contacto">
+        <h2>Contacto :</h2>
+        <h3 id="mensaje">Enviar Mensaje</h3>
+        <form class="formulario" action="" method="post">
+            <input class="bordes form_items" type="text" name="Nombre y apellido " placeholder="Nombre y apellido" required />
+            <input class="bordes form_items" type="text" name="Email" placeholder="Email" required />
+            <textarea class="bordes form_items_text" type="email" name="Mensaje" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar" id="enviar"/>
+        </form>
+        <div class="final">
+            <div class="redes">
+                <div class="btn_icono">
+                    <a class="iconos_fondo" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official iconos"></i></a>
+                </div>
+                <div class="btn_icono">
+                    <a class="iconos_fondo" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter iconos"></i></a>
+                </div>
+                <div class="btn_icono">
+                    <a class="iconos_fondo" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram iconos"></i></a>
+                </div>
+                <div class="btn_icono">
+                    <a class="iconos_fondo" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play iconos"></i></a>
+                </div>
+                <div class="btn_icono">
+                    <a class="iconos_fondo" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin iconos"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="functions.js"></script>
+
+</body>
+</html>
