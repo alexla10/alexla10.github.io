@@ -313,6 +313,7 @@ section#Habilidades {
     width: 60px;
     color: #0099f7;
     border: none;
+    cursor: pointer;
 }
 
 #idiomas_titulo {
