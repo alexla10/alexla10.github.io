@@ -107,7 +107,7 @@ h4 {
 }
 /** Barra de navegacion para celulares */
 
-@media (max-width: 768px){
+@media (max-width: 915px){
     body {
         display: block;
     }
@@ -295,7 +295,7 @@ section#Habilidades {
     border: 2px solid blueviolet;
     background-color: #9a8478;
     border-radius: 10px;
-    height: 400px;
+    height: auto;
 }
 
 #Lenguajes {
@@ -484,4 +484,38 @@ footer#Contacto {
 .switchDark.activo::after {
     left: unset;
     right: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-box {
+    visibility: hidden;
+    position: absolute;
+    background: white;
+    color: black;
+    text-align: center;
+    z-index: 1;
+    border-radius: 3px;
+    padding: 6px 0;
+    width: 200px;
+    top: 65px;
+    right: -70px;
+}
+
+.tooltip .tooltip-box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: 33px;
+    left: 80px;
+}
+
+.tooltip:hover .tooltip-box {
+    visibility: visible;
 }

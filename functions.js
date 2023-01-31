@@ -40,9 +40,23 @@ switchBoton.addEventListener("click", function(){
     switchBoton.classList.toggle("activo");
     if(switchBoton.classList.contains("activo")){
         estilo.setAttribute("href","CSS/dark_mode.css");
+        localStorage.setItem("dark_mode","true");
+        document.getElementById("tooltip-text").innerHTML = "Cambiar a modo claro";
     }else{
         estilo.setAttribute("href","CSS/styles.css");
+        localStorage.setItem("dark_mode","false");
+        document.getElementById("tooltip-text").innerHTML = "Cambiar a modo oscuro";
     }
 })
 
+//Obtener el modo en el que estaba
+if(localStorage.getItem("dark_mode") === "true"){
+    estilo.setAttribute("href","CSS/dark_mode.css");
+    switchBoton.classList.add("activo");
+    document.getElementById("tooltip-text").innerHTML = "Cambiar a modo claro";
+}else{
+    estilo.setAttribute("href","CSS/styles.css");
+    switchBoton.classList.remove("activo");
+    document.getElementById("tooltip-text").innerHTML = "Cambiar a modo oscuro";
+}
 
