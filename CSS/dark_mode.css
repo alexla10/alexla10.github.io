@@ -81,7 +81,7 @@ h4 {
 }
 
 .sombreado:hover {
-    background-color: orange;
+    background-color: green;
     transition: 0.5s;
 }
 

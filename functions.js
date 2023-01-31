@@ -8,13 +8,12 @@ navBar.addEventListener("click", function(){
     navMenu.classList.toggle("nav-menu-visible");
     if(navMenu.classList.contains("nav-menu-visible")){
         barIcon.setAttribute("class", "fa fa-times");
-        console.log("pasa por el if");
     }else{
         barIcon.setAttribute("class", "fa fa-bars");
-        console.log("pasa por el else");
     }
 });
 
+//Quitar el menu al hacer click en un enlace
 const menuLinks = document.querySelectorAll(`.nav-link`);
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click",function(){
@@ -23,6 +22,7 @@ menuLinks.forEach(menuLink => {
     });
 });
 
+//Boton Mas Info
 const info = document.querySelector(".mas_info");
 document.getElementById("boton_mostrar").addEventListener("click",function(){
     info.classList.toggle("mas_info");
@@ -33,6 +33,7 @@ document.getElementById("boton_mostrar").addEventListener("click",function(){
     }
 });
 
+//Cambio de modo nocturno a claro
 const switchBoton = document.getElementById("switch");
 const estilo = document.getElementById("estilos")
 switchBoton.addEventListener("click", function(){
