@@ -1,5 +1,3 @@
-/** Barra de navegacion */
-
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +5,15 @@
     font-family: sans-serif;
 }
 
-body {
-    font-family: sans-serif;
-    margin: 0px auto;
+main {
     overflow-x: hidden;
 }
 
+footer {
+    overflow-x: hidden;
+}
 
+/** Barra de navegacion */
 header {
     background-color: #b21f1f;
     height: 60px;
@@ -33,7 +33,7 @@ h2 {
 h3 {
     text-align: left;
     font-size: 25px;
-    padding: 20px 180px;
+    padding: 20px 120px;
 }
 
 h4 {
@@ -85,7 +85,6 @@ h4 {
     transition: 0.5s;
 }
 
-
 .nav-bar {
     color: white;
     background: none;
@@ -105,18 +104,9 @@ h4 {
     line-height: 60px;
     display: none;
 }
+
 /** Barra de navegacion para celulares */
-
 @media (max-width: 915px){
-    body {
-        display: block;
-    }
-
-    main {
-        display: block;
-        word-wrap: break-word;
-    }
-
     header {
         background-color: #b21f1f;
         height: 60px;
@@ -148,8 +138,8 @@ h4 {
     .nav-menu-item {
         line-height: 70px;
         text-transform: uppercase;
-        
     }
+
     .sombreado {
         padding: 8px 12px;
         border-radius: 3px;
@@ -157,10 +147,8 @@ h4 {
     
     .sombreado:hover {
         background: none;
-        color: aqua;
-        
+        color: greenyellow;
     }
-    
     
     .nav-bar {
         color: white;
@@ -187,14 +175,12 @@ h4 {
     .nav-menu-visible {
         left: 0;
     }
-
 }
 
 /** Seccion Inicio */
 
 h1#props {
     font-size: 40px;
-    
 }
 
 section#Inicio {
@@ -207,12 +193,10 @@ section#Inicio {
     color: white;
 }
 
-
 section#Inicio img {
     width: 250px;
     margin-bottom: 30px;
-    border-radius: 150px;
-    
+    border-radius: 150px; 
 }
 
 /** Seccion Informacion Personal */
@@ -223,23 +207,20 @@ section#Sobre-Mi{
     color: greenyellow;
 }
 
-
 h3#datos {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid gray;
     border-radius: 10px;
-    margin: 15px 180px;
+    margin: 15px;
     text-align: center;
     word-wrap: break-word;
     font-size: 20px;
 }
 
 p#parrafo {
-    margin-bottom: 0px;
-    padding: 0 180px;
+    padding: 0 80px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -255,11 +236,10 @@ p#parrafo {
 .items {
     font-size: 20px;
     text-align: left;
-    margin: 0px 80px;
     padding: 10px;
-    margin: 15px 180px;
+    margin: 15px;
+    margin-left: 120px;;
 }
-
 
 /** Seccion Informacion */ 
 section#Experiencia{
@@ -288,6 +268,7 @@ section#Habilidades {
     border: 2px solid blueviolet;
     background-color: #9a8478;
     border-radius: 10px;
+    max-width: 455px;
 }
 
 .Conocimientos_2 {
@@ -295,7 +276,7 @@ section#Habilidades {
     border: 2px solid blueviolet;
     background-color: #9a8478;
     border-radius: 10px;
-    height: auto;
+    max-height: 420px;
 }
 
 #Lenguajes {
@@ -326,7 +307,6 @@ section#Habilidades {
     margin-right: 52px;
     bottom: -5px;
     padding-top: 5px;
-
 }
 
 .ing {
@@ -347,11 +327,11 @@ footer#Contacto {
     height: auto;
     background: linear-gradient(to bottom,#2f0743,#870000);
     color: white;
+    overflow-y: hidden;
 }
 
 #mensaje {
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -376,7 +356,6 @@ footer#Contacto {
     width: 300px;
     resize: none;
 }
-
 
 #enviar {
     background-color: #42b72a;
@@ -460,8 +439,6 @@ footer#Contacto {
     background: none;
 }
 
-
-
 .switchDark::after {
     content: "";
     display: block;
@@ -496,6 +473,7 @@ footer#Contacto {
     position: absolute;
     background: white;
     color: black;
+    font-weight: bold;
     text-align: center;
     z-index: 1;
     border-radius: 3px;
