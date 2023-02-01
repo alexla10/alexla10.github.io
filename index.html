@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edgar Simmons CV</title>
+
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link id="estilos" rel="stylesheet" href="CSS/styles.css">
+    <link id="oscuro" rel="stylesheet" href="">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="icon" type="image/x-icon" href="imagenes/icono.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
@@ -18,15 +21,14 @@
     <meta property="og:title" content="Edgar Simmons CV" />
     <meta property="og:image" content="https://i.ibb.co/9wLgWcp/Imagen-Central-OG.png" />
     <meta property="og:description" content="Desarrollador Web" />
-    <meta property="og:type" content="website" />
-    
+    <meta property="og:type" content="website" />  
 </head>
 <body>
     <header>
         <!-- Barra de Navegacion -->
         <nav class="nav">
             <img src="https://cdn.profesional.ticmas.io/logos/argentina-programa.svg" alt="Logo de Argentina Programa 4.0" class="logo">
-            <div class="tooltip top">
+            <div class="tooltip">
                 <span class="tooltip-box" id="tooltip-text">Cambiar a modo oscuro</span>
                 <button class="switchDark  alineacion" id="switch">
                     <span class="ligth"><i class='bx bx-sun' ></i></span>
@@ -50,9 +52,7 @@
         <!-- Incio - Foto de Perfil -->
         <section id="Inicio">
             <h1 id="props">EDGAR SIMMONS</h1>
-            
             <img src="imagenes/imagen_perfil.jpg" alt="Imagen de perfil">
-
             <h1 id="props">Desarrolador Web</h1>
         </section>
 
@@ -65,7 +65,7 @@
             <h3 id="datos"><i class='bx bxs-calendar'></i> Fecha de Nacimiento : 6 de mayo 1986</h3>
             <h3 id="datos"><i class="fa fa-map-marker"></i> Lugar de Residencia : Capital Federal</h3>
             <h3 id="datos"><i class="fa fa-envelope-o"></i> E-Mail : edgar.simmons@gmail.com</h3>
-            <h3 id="datos"><i class="fa fa-whatsapp"></i> Telefono : (262) 619-3113</h3>
+            <h3 id="datos"><i class="fa fa-whatsapp"></i> Telefono : +54 9 1145665411 </h3>
             <div>
                 <ul class="lista">
                     <h3>Formacion Academica :</h3>
@@ -79,27 +79,26 @@
         <!-- Experiencia Laboral -->
         <section id="Experiencia">
             <h2 id="titulo_experiencia">Experiencia :</h2>
-            <h3 style="text-decoration: underline">Imactions - Junior Web Devolper, Marzo 2011 - Junio 2015</h3>
+            <h3 style="text-decoration: underline" class="lista">Imactions - Junior Web Devolper, Marzo 2011 - Junio 2015</h3>
             <ul class="lista">
                 <li class="items">Participación activa en el diseño web creativo y su desarrollo.</li>
                 <li class="items">Diseño de proyecto y planificación.</li>
                 <li class="items">Optimizacion del rendimiento y la calidad de respuesta de las aplicaicones.</li>
             </ul>
 
-            <h3 style="text-decoration: underline">Banco Patagonia - Senior Web Devolper, Septiembre 2015 - Enero 2020</h3>
+            <h3 style="text-decoration: underline" class="lista">Banco Patagonia - Senior Web Devolper, Septiembre 2015 - Enero 2020</h3>
             <ul class="lista">
                 <li class="items">Participación activa en el diseño web creativo y su desarrollo.</li>
                 <li class="items">Reducir en un 10% los errores de la pagina de inicio del prtal de la compañia.</li>
                 <li class="items">Maquetado y desarrollo web Front End.</li>
             </ul>
 
-            <h3 style="text-decoration: underline">Accenture Argentina - Senior Web Devolper, Abril 2020 - Actualidad</h3>
+            <h3 style="text-decoration: underline" class="lista">Accenture Argentina - Senior Web Devolper, Abril 2020 - Actualidad</h3>
             <ul class="lista">
                 <li class="items">Participación activa en el diseño web creativo y su desarrollo.</li>
                 <li class="items">Reducir en un 15% los errores de la pagina de inicio del prtal de la compañia.</li>
                 <li class="items">Maquetado y desarrollo web Front End.</li>
             </ul>
-
         </section>
 
         <!-- Lenguajes de programacion, idiomas etc. -->
@@ -124,10 +123,10 @@
                 </div>
                 <div class="Conocimientos_2">
                     <h3 id="idiomas_titulo">Manejo de Idiomas</h3>
-                    <h4><img src="imagenes/Bandera_de_España.png" alt="Bandera de España" class="Banderas">Español - Nativo</h4>
-                    <h4><img src="imagenes/Bandera_de_Reino_Unido.png" alt="Bandera del Reino Unido" class="Banderas ing">Ingles - Avanzado</h4>
-                    <h4><img src="imagenes/Bandera_de_Francia.png" alt="Bandera de Francia" class="Banderas fra">Frances - Intermedio</h4>
-                    <h4><img src="imagenes/Bandera_de_Italia.png" alt="Bandera de Italia" class="Banderas ita">Italiano - Intermedio</h4>
+                    <h4 class="Lenguajes"><img src="imagenes/Bandera_de_España.png" alt="Bandera de España" class="Banderas">Español - Nativo</h4>
+                    <h4 class="Lenguajes"><img src="imagenes/Bandera_de_Reino_Unido.png" alt="Bandera del Reino Unido" class="Banderas ing">Ingles - Avanzado</h4>
+                    <h4 class="Lenguajes"><img src="imagenes/Bandera_de_Francia.png" alt="Bandera de Francia" class="Banderas fra">Frances - Intermedio</h4>
+                    <h4 class="Lenguajes"><img src="imagenes/Bandera_de_Italia.png" alt="Bandera de Italia" class="Banderas ita">Italiano - Intermedio</h4>
                 </div>
             </div>
         </section>
@@ -137,7 +136,8 @@
     <footer id="Contacto">
         <h2>Contacto :</h2>
         <h3 id="mensaje">Enviar Mensaje</h3>
-        <form class="formulario" action="" method="post">
+        <!--puse action="" method="post" pero al enviar me salia error -->
+        <form class="formulario">
             <input class="bordes form_items" type="text" name="Nombre y apellido " placeholder="Nombre y apellido" required />
             <input class="bordes form_items" type="text" name="Email" placeholder="Email" required />
             <textarea class="bordes form_items_text" type="email" name="Mensaje" placeholder="Mensaje" required></textarea>
@@ -164,8 +164,6 @@
         </div>
     </footer>
 
-
     <script src="functions.js"></script>
-
 </body>
 </html>

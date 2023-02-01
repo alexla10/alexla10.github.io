@@ -5,14 +5,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-main {
-    overflow-x: hidden;
-}
-
-footer {
-    overflow-x: hidden;
-}
-
 /** Barra de navegacion */
 header {
     background-color: skyblue;
@@ -33,7 +25,7 @@ h2 {
 h3 {
     text-align: left;
     font-size: 25px;
-    padding: 20px 120px;
+    padding: 20px 20px;
 }
 
 h4 {
@@ -206,13 +198,14 @@ section#Sobre-Mi{
     height: auto;
     padding-bottom: 80px;
     background: linear-gradient(to bottom, #f11712,greenyellow);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 h3#datos {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 12px;
     border-radius: 10px;
     margin: 15px;
     text-align: center;
@@ -220,8 +213,15 @@ h3#datos {
     font-size: 20px;
 }
 
+h3#datos:hover {
+    background: white;
+    color: blue;
+    transition: 0.5s;
+}
+
 p#parrafo {
-    margin: 0 80px;
+    margin: 0 40px;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
 }
@@ -230,6 +230,7 @@ p#parrafo {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -239,7 +240,7 @@ p#parrafo {
     text-align: left;
     padding: 10px;
     margin: 15px;
-    margin-left: 120px;
+    margin-left: 60px;
 }
 
 /** Seccion Informacion */ 
@@ -268,7 +269,14 @@ section#Habilidades {
     border: 2px solid blueviolet;
     background-color: wheat;
     border-radius: 10px;
-    max-width: 455px;
+    margin: 0 10px;
+}
+
+@media (max-width : 700px) and (min-width : 320px) {
+    .Conocimientos_1{
+        width: 298px;
+    }
+
 }
 
 .Conocimientos_2 {
@@ -276,11 +284,9 @@ section#Habilidades {
     border: 2px solid blueviolet;
     background-color: wheat;
     border-radius: 10px;
-    max-height: 420px;
-}
-
-#Lenguajes {
-    width: 583px;
+    margin: 0 10px;
+    height: max-content;
+    width: max-content;
 }
 
 .mas_info {
@@ -297,8 +303,16 @@ section#Habilidades {
     cursor: pointer;
 }
 
+#boton_mostrar:hover {
+    background: blue;
+}
+
 #idiomas_titulo {
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+}
+
+.Lenguajes {
+    margin-bottom: 33px;
 }
 
 .Banderas {
@@ -322,7 +336,6 @@ section#Habilidades {
 }
 
 /** Seccion Contacto */
-
 footer#Contacto {
     height: auto;
     background: linear-gradient(to bottom,#5d26c1,#4a00e0);
@@ -344,7 +357,7 @@ footer#Contacto {
 .form_items {
     margin: 20px;
     height: 40px;
-    width: 300px;
+    width: 260px;
     padding: 16px 16px;
 }
 
@@ -352,7 +365,7 @@ footer#Contacto {
     padding: 16px 16px;
     margin: 20px;
     height: 160px;
-    width: 300px;
+    width: 260px;
     resize: none;
 }
 
@@ -360,13 +373,17 @@ footer#Contacto {
     background-color: #42b72a;
     color: white;
     height: 40px;
-    width: 300px;
+    width: 260px;
     text-align: center;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
     border-radius: 6px;
     margin-bottom: 40px;
+}
+
+#enviar:hover {
+    background-color: green;
 }
 
 /** cuando hago click */
@@ -423,7 +440,7 @@ footer#Contacto {
     display: flex;
     position: relative;
     cursor: pointer;
-    outline: 1px solid black;
+    outline: 3px solid black;
     border: none;
     border-radius: 1rem;
     justify-content: space-between;   

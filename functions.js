@@ -35,7 +35,7 @@ document.getElementById("boton_mostrar").addEventListener("click",function(){
 
 //Cambio de modo nocturno a claro
 const switchBoton = document.getElementById("switch");
-const estilo = document.getElementById("estilos")
+const estilo = document.getElementById("oscuro")
 switchBoton.addEventListener("click", function(){
     switchBoton.classList.toggle("activo");
     if(switchBoton.classList.contains("activo")){
@@ -43,7 +43,7 @@ switchBoton.addEventListener("click", function(){
         localStorage.setItem("dark_mode","true");
         document.getElementById("tooltip-text").innerHTML = "Cambiar a modo claro";
     }else{
-        estilo.setAttribute("href","CSS/styles.css");
+        estilo.setAttribute("href","");
         localStorage.setItem("dark_mode","false");
         document.getElementById("tooltip-text").innerHTML = "Cambiar a modo oscuro";
     }
@@ -55,7 +55,7 @@ if(localStorage.getItem("dark_mode") === "true"){
     switchBoton.classList.add("activo");
     document.getElementById("tooltip-text").innerHTML = "Cambiar a modo claro";
 }else{
-    estilo.setAttribute("href","CSS/styles.css");
+    estilo.setAttribute("href","");
     switchBoton.classList.remove("activo");
     document.getElementById("tooltip-text").innerHTML = "Cambiar a modo oscuro";
 }
